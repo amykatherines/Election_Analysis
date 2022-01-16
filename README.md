@@ -20,9 +20,9 @@ Using the data analysis, we can answer several questions about the results inclu
    - Raymon Anthony Doane:     **11,606** votes -  **3.1%** of the votes
 - **Diana DeGette** won with **272,892** votes which is **73.8%** of the total vote
 
-## Future Use of Audit Script
+## Summary and Future Use of Audit Script
  
- To provide this audit, we read through a CSV file that was provided and summarized all votes contained within.  The Python script was written so that it would run for any number of candidates across any number of counties.  The script is flexible so that it can be used for any election where the results are available in a common CSV format.  To improve the reusabiliy of the script, we would recommend making at least the following 3 modifications:
+ To provide this audit, we read through a CSV file that was provided and summarized all votes contained within using a Python script.  The code was written so that it would run for any number of candidates across any number of counties.  If the committee wanted to have a repeatable election tabulation method for all elections, we would suggest extending the functionality of the script to maximize reusability, cost savings, and consistency.  The script is flexible so that it can be used for any election where the results are available in a common CSV format but we would recommend making at least the following 3 modifications:
  1.  Add a column into the CSV file to list out the unique election name.
  2.  Add a heading into the command line results and the text file to list the race name.
  3.  When creating the output text file name, concatenate on the race name to the file name so distinct race files are not overwritten.
