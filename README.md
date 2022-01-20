@@ -22,12 +22,17 @@ Using the data analysis, we can answer several questions about the results inclu
 
 Below are images of the results from the Terminal Output and the File Output:
 
-![Terminal Output](/Resources/File_Results.png)
+**Terminal Output**
 
+![Terminal Output](/Resources/Terminal_Results.png)
+
+**Text File Output**
+
+![File Output](/Resources/File_Results.png)
 
 ## Summary and Future Use of Audit Script
  
-To provide this audit, we wrote a program to read through the provided comma delimited file (CSV) containing voter votes and summarized all the individual votes contained within using a Python script.  The code was written so that it would run for any number of candidates across any number of counties for a single election.  If the committee wanted to have a repeatable election tabulation method for all elections, we would suggest extending the functionality of the script to maximize reusability, cost savings, and consistency.  The script is flexible so that it can be used for any election where the results are available in a common CSV format but we would recommend making at least the following 3 modifications:
+To complete this audit, we wrote a program to read through the provided comma delimited file (CSV) containing votes and summarized all the individual lines contained within using a Python script.  The code was written so that it would run for any number of candidates across any number of counties for a single election.  If the committee wanted to have a repeatable election tabulation method for all elections, we would suggest extending the functionality of the script to maximize reusability, cost savings, and consistency.  The script is flexible so that it can be used for any election where the results are available in a common CSV format but we would recommend making at least the following 3 modifications:
  1.  Add a column into the CSV file to list out the unique election name.
  2.  Add a heading into the command line results and the text file to list the race name.
  3.  When creating the output text file name, concatenate on the race name to the file name so distinct race files are not overwritten.
