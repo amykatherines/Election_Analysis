@@ -22,7 +22,7 @@ Using the data analysis, we can answer several questions about the results inclu
 
 Below are images of the results from the Terminal Output and the File Output:
 
-![Terminal Output](/Resources/File_Results.png =x250)
+![Terminal Output](/Resources/File_Results.png)
 
 
 ## Summary and Future Use of Audit Script
