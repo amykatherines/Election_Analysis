@@ -1,11 +1,14 @@
 # -*- coding: UTF-8 -*-
 """PyPoll Homework Challenge Solution."""
+# This script will read a CSV file for votes cast in an election.
+# The format of the file is known and there is a header row
+# The output from the processing will be written to the terminal
+# And written to a file in the "analysis" folder.
+# 2022.01.22 - AKS - Created this script
 
 # Add our dependencies.
 import csv
 import os
-
-
 
 # Add a variable to load a file from a path.
 file_to_load = os.path.join("Resources", "election_results.csv")
@@ -23,17 +26,13 @@ candidate_votes_dict = {}
 county_list = []
 county_dict = {}
 
-
 # Track the winning candidate, vote count and percentage
 winning_candidate = ""
 winning_count = 0
 winning_percentage = 0
+# 2: Track the largest county and county voter turnout.
 county_that_won_count = 0
 county_that_won = ""
-
-# 2: Track the largest county and county voter turnout.
-
-
 
 # Read the csv and convert it into a list of dictionaries
 with open(file_to_load) as election_data:
@@ -91,6 +90,7 @@ with open(file_to_save, "w") as txt_file:
         f"County Votes:\n")
     print(election_results, end="")
 
+    # write to the text file
     txt_file.write(election_results)
 
     # 6a: Write a for loop to get the county from the county dictionary.
