@@ -2,7 +2,7 @@
 
 ## Overview of Analysis
 
-We have been asked to tabulate election results for a Colorado congressional race to determine the winner of the popular vote.  We also analyzed county vote counts to determine which had the highest turnout. The results are displayed on the command line for immediate viewing, and they are written to a text file reference and distribution.  Python is used to create the script.
+We have been asked to tabulate election results for a Colorado congressional race to determine the winner of the popular vote.  We also analyzed county vote counts to determine which had the highest turnout. The results are displayed on the command line for immediate viewing, and they are written to a text file for reference and distribution.  Python is used to create the script.
 
 ## Election Audit
 
@@ -20,9 +20,14 @@ Using the data analysis, we can answer several questions about the results inclu
    - Raymon Anthony Doane:     **11,606** votes -  **3.1%** of the votes
 - **Diana DeGette** won with **272,892** votes which is **73.8%** of the total vote
 
+Below are images of the results from the Terminal Output and the File Output:
+
+![Terminal Output](/Resources/File_Results.png =x250)
+
+
 ## Summary and Future Use of Audit Script
  
- To provide this audit, we read through a CSV file that was provided and summarized all votes contained within using a Python script.  The code was written so that it would run for any number of candidates across any number of counties.  If the committee wanted to have a repeatable election tabulation method for all elections, we would suggest extending the functionality of the script to maximize reusability, cost savings, and consistency.  The script is flexible so that it can be used for any election where the results are available in a common CSV format but we would recommend making at least the following 3 modifications:
+To provide this audit, we wrote a program to read through the provided comma delimited file (CSV) containing voter votes and summarized all the individual votes contained within using a Python script.  The code was written so that it would run for any number of candidates across any number of counties for a single election.  If the committee wanted to have a repeatable election tabulation method for all elections, we would suggest extending the functionality of the script to maximize reusability, cost savings, and consistency.  The script is flexible so that it can be used for any election where the results are available in a common CSV format but we would recommend making at least the following 3 modifications:
  1.  Add a column into the CSV file to list out the unique election name.
  2.  Add a heading into the command line results and the text file to list the race name.
  3.  When creating the output text file name, concatenate on the race name to the file name so distinct race files are not overwritten.
